@@ -4,39 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/klx250-camo428m.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>Contact</title>
 </head>
 <body>
     <header>
-        <h1>Nicholas Wells</h1>
+        <h1 class="title">Nicholas Wells</h1>
     </header>
-    <hr />
-    <nav>
+    <nav class="nav">
         <a href="index.html">Home</a>
         <br />
         <a href="contact.html">Contact</a>
         <br>
         <a href="socialMedia.html">Social Media</a>
     </nav>
-    <hr />
     <main>
-        <section>
-            <img src="./assets/IMG_20240106_151232.jpg" height="400" alt="Nicholas Photo"> 
+        <section >
+            <img class="photo" src="./assets/IMG_20240106_151232.jpg" height="400" alt="Nicholas Photo"> 
         </section>
-        <h1>Contact pages</h1>
-        <h2>Let’s Connect!</h2>
-        <p>
+        <h1 class="h2">Contact pages</h1>
+        <h2 class="h3">Let’s Connect!</h2>
+        <p class="parragraph">
             Whether you have questions, want to share ideas, or simply want to connect, feel free to reach out! I’m always excited to meet new people, share experiences, and learn from others. You can contact me through the form below or find me on my social media platforms. Looking forward to connecting with you!
         </p>
-        <form>
+        <form class="parragraph">
             <label for="Name">Name</label>
             <input type="text" id="Name">
             <label for="Email">Email</label>
             <input type="email" id="Email">
+            <label for="message">Message</label>
+            <textarea name="message" placeholder="Type here your message"></textarea>
+            <button type="submit">Send</button>
         </form>
     </main>
     <br >
-    <aside>
+    <aside class="nav">
         <a
         href="https://www.linkedin.com/in/nicholas-wells-6b2038281/"
         target="_blank"
@@ -56,16 +58,12 @@
         <img src="./assets/gmail logo.png" height="50px" alt="Gmail logo">
         </a>
     </aside>
-    <footer id="Bottom">
-        <hr>
-        <h3>About Me</h3>
-        <p>Biker, learner, and tech enthusiast. From BMX to downhill racing, to cross-country biking, I've been passionate about cycling since I was a kid. Currently, I’m working with a team of lawyers while diving into web development with HTML, CSS, and JavaScript. Always open to new connections and ideas!</p>
+    <footer class="footer">
+        <h3 class="h3">Let’s Connect</h3>
+        <p class="parragraph">Feel free to reach out via the contact form or connect with me on social media. Let’s share experiences, learn together, and create something great!</p>
 
-        <h3>Let’s Connect</h3>
-        <p>Feel free to reach out via the contact form or connect with me on social media. Let’s share experiences, learn together, and create something great!</p>
-
-        <h3>Follow Me</h3>
-        <a
+        <h3 class="h3">Follow Me</h3>
+        <a class="icons"
         href="https://www.instagram.com/wellsrpo/"
         target="_blank"
         rel="noopener noreferrer"
@@ -79,7 +77,6 @@
         >
         <img src="./assets/facebookLogo.png" height="50px" alt="facebook Logo">
         </a>
-        <p><a href="#top">Top</a></p>
     </footer>
 </body>
 </html>

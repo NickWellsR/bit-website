@@ -124,26 +124,30 @@ tr,th,td {
 }
   /*aside*/
     .aside {
-        margin-top: 110px;
+        margin-top: 90px;
     }
     .fun-fact{
-        margin-top: 230px;
+        margin-top: 240px;
         margin-bottom: 200px;
     }
     .coding{
-        margin-top: 100px;
-        border-radius: 50px;
+      margin-top: 70px;
+      border-radius: 50%;
+    }
+    .famphoto{
+    margin-top: 150px;
+    border-radius: 60%;
     }
 
     
-  /*footer*/
-  .footer {
+    /*footer*/
+    .footer {
     background-image: linear-gradient(#ffffff,#103783);
     background-repeat: no-repeat;
     min-height: 300px;
-  }
-  .icons {
+    }
+   .icons {
     padding: 10px;
     margin-left: 50px;
-  }
+    }
 

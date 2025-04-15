@@ -1,9 +1,14 @@
 * {
     box-sizing: border-box;
+    
   }
   
   html {
     height: 100%;
+  }
+  :root {
+   --primary-color: #103783;
+   --secundary-color: white;
   }
 
   body {
@@ -11,7 +16,7 @@
     display: flex;
     flex: wrap;
     flex-direction: column;
-    background-image: linear-gradient(#103783,white);
+    background-image: linear-gradient(var(--primary-color),var(--secundary-color));
     background-repeat: no-repeat;
     min-height: 100vh;
     
@@ -35,7 +40,7 @@
  
   /*header*/
   .title{
-    color: white;
+    color: var(--secundary-color);
     font-family: 'Times New Roman', Times, serif;
     font-size: 70px;
     margin-left: 50px;
@@ -43,7 +48,7 @@
 
   /*nav*/
   nav a {
-    color: white;
+    color: var(--secundary-color);
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: larger;
@@ -52,7 +57,7 @@
   .nav {
     padding: 10px;
     display: flex;  
-    justify-content: space-around; 
+    justify-content: space-evenly; 
     align-items: center;
     
   }
@@ -64,21 +69,21 @@
     margin-left: 38%;
     border-radius: 50px;
     max-width: 100%;
-    border: solid white 3px;
+    border: solid var(--secundary-color) 3px;
   }
 
   .h2  {
     font-family: 'Times New Roman', Times, serif;
     font-size: 32px;
     margin-left: 50px;
-    color:#103783
+    color:var(--primary-color)
   }
 
   .h3  {
     font-family: 'Times New Roman', Times, serif;
     font-size: 28px;
     margin-left: 50px;
-    color:#103783
+    color:var(--primary-color)
   }
 
   .parragraph {
@@ -90,17 +95,17 @@
   .video {
       border: solid black 10px;
       border-radius: 70px;
-      margin-top: 20px;
+      margin-top: 50px;
       margin-left: 20%;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9); 
       margin-bottom: 50px;
   }
 
   .song { 
-    border: 3px solid #103783;
+    border: 3px solid var(--primary-color);
       border-radius: 10px;
       padding: 10px;
-      background-color: #f1f1f1; 
+      background-color: var(--secundary-color); 
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); 
       width: 100%;       
       max-width: 700px; 
@@ -120,7 +125,7 @@ tr,th,td {
 .family-members {
     font-family: 'Times New Roman', Times, serif;
     font-size: 26px;
-    color:#103783
+    color:var(--primary-color)
 }
   /*aside*/
     .aside {
@@ -135,14 +140,14 @@ tr,th,td {
       border-radius: 50%;
     }
     .famphoto{
-    margin-top: 150px;
-    border-radius: 60%;
+     margin-top: 150px;
+     border-radius: 60%;
     }
 
     
     /*footer*/
     .footer {
-    background-image: linear-gradient(#ffffff,#103783);
+    background-image: linear-gradient(var(--secundary-color),var(--primary-color));
     background-repeat: no-repeat;
     min-height: 300px;
     }
@@ -150,4 +155,243 @@ tr,th,td {
     padding: 10px;
     margin-left: 50px;
     }
+
+   .form-container {
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px 30px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+   .form-group {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+   label {
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="file"],
+    input[type="tel"],
+    textarea {
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: border-color 0.2s ease;
+    }
+    
+    input:focus,
+    textarea:focus {
+      border-color: var(--primary-color);
+      outline: none;
+    }
+    
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+    
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    
+    button:hover {
+      background-color: #005fcc;
+    }
+    
+
+    /*Media Queries*/
+
+    @media (max-width: 992px) {
+      .title {
+        font-size: 50px;
+        margin-left: 30px;
+      }
+    
+      .h2, .h3 {
+        font-size: 24px;
+        margin-left: 30px;
+      }
+    
+      .parragraph {
+        font-size: 14px;
+        margin: 20px;
+      }
+    
+      .nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    
+      .photo {
+        margin-left: 35%;
+        max-width: 80%;
+      }
+    
+      .video {
+        margin-left: 10%;
+        max-width: 80%;
+      }
+    
+      .song {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+      }
+    
+      .table {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .container {
+        flex-direction: column;
+        height: auto;
+      }
+    
+      .main-container, .aside-container {
+        flex: 1 0 auto;
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      /*TABLET*/
+      .title {
+        font-size: 50px;
+        margin-left: 30px;
+      }
+    
+      .h2, .h3 {
+        font-size: 24px;
+        margin-left: 30px;
+      }
+    
+      .parragraph {
+        font-size: 14px;
+        margin: 20px;
+      }
+    
+      .nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    
+      .photo {
+        margin-left: 25%;
+        max-width: 80%;
+      }
+    
+      .video {
+        margin-left: 10%;
+        max-width: 80%;
+      }
+    
+      .song {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+      }
+    
+      .table {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .container {
+        flex-direction: column;
+        height: auto;
+      }
+    
+      .main-container, .aside-container {
+        flex: 1 0 auto;
+        padding: 10px;
+      }
+    }
+    
+
+    @media screen and (max-width: 576px) {
+      /*SmartPhone*/
+      .title {
+        font-size: 36px;
+        margin-left: 20px;
+      }
+    
+      .h2, .h3 {
+        font-size: 20px;
+        margin-left: 20px;
+      }
+    
+      .parragraph {
+        font-size: 13px;
+        margin: 15px;
+      }
+    
+      .photo {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+      }
+    
+      .video {
+        margin-left: 5%;
+        max-width: 90%;
+      }
+    
+      .song {
+        margin: 0 auto;
+        width: 95%;
+      }
+    
+      .table {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12px;
+      }
+    
+      .nav {
+        flex-direction: column;
+        font-size: medium;
+        gap: 8px;
+      }
+    
+      .container {
+        flex-direction: column;
+        height: auto;
+      }
+    
+      .main-container, .aside-container {
+        flex: 1 0 auto;
+        padding: 10px;
+      }
+    
+      .icons {
+        margin-left: 20px;
+      }
+    }
+    
+
+    
+    
+   
+    
+    
 
